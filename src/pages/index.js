@@ -18,8 +18,8 @@ const IndexPage = ({ data }) => {
             </tr>
           </thead>
           <tbody>
-            {data.allMdx.edges.map(({ node }, index) => (
-              <tr key={index}>
+            {data.allMdx.edges.map(({ node }) => (
+              <tr key={node.id}>
                 <td>
                   <Link to={node.frontmatter.slug}>
                     {node.frontmatter.name}
