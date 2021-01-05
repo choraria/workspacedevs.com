@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 
 const IndexPage = ({data}) => {
@@ -18,7 +18,7 @@ const IndexPage = ({data}) => {
           <tbody>
             {data.allMdx.edges.map(({ node }, index) => (
               <tr key={index}>
-                <td>{node.frontmatter.name}</td>
+                <td><Link to={node.frontmatter.slug}>{node.frontmatter.name}</Link></td>
                 <td>{node.frontmatter.location}</td>
                 <td>{node.frontmatter.intro}</td>
               </tr>
