@@ -8,7 +8,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Header />
       <div>
-        <h1  style={{ borderBottom: 0 }}>Google Workspace Developers</h1>
+        <h1 style={{ borderBottom: 0 }}>Google Workspace Developers</h1>
         <table>
           <thead>
             <tr>
