@@ -1,6 +1,6 @@
 // https://www.gatsbyjs.com/docs/mdx/programmatically-creating-pages/#create-pages-from-sourced-mdx-files
 
-const path = require("path")
+const path = require("path");
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
