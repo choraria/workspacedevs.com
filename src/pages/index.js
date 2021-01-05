@@ -2,7 +2,6 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Header from "../components/header";
-import PeopleList from "../templates/people-list";
 
 const IndexPage = ({ data }) => {
   return (
@@ -10,8 +9,7 @@ const IndexPage = ({ data }) => {
       <Header />
       <div>
         <h1 style={{ borderBottom: 0 }}>Google Workspace Developers</h1>
-        <PeopleList />
-        {/* <table>
+        <table>
           <thead>
             <tr>
               <th>Name</th>
@@ -32,7 +30,7 @@ const IndexPage = ({ data }) => {
               </tr>
             ))}
           </tbody>
-        </table> */}
+        </table>
       </div>
     </Layout>
   );
