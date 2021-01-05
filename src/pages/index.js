@@ -2,7 +2,7 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 
-const IndexPage = ({data}) => {
+const IndexPage = ({ data }) => {
   return (
     <Layout>
       <div>
@@ -18,7 +18,11 @@ const IndexPage = ({data}) => {
           <tbody>
             {data.allMdx.edges.map(({ node }, index) => (
               <tr key={index}>
-                <td><Link to={node.frontmatter.slug}>{node.frontmatter.name}</Link></td>
+                <td>
+                  <Link to={node.frontmatter.slug}>
+                    {node.frontmatter.name}
+                  </Link>
+                </td>
                 <td>{node.frontmatter.location}</td>
                 <td>{node.frontmatter.intro}</td>
               </tr>
@@ -27,27 +31,27 @@ const IndexPage = ({data}) => {
         </table>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
-query peopleQuery {
-  allMdx {
-    edges {
-      node {
-        frontmatter {
-          description
-          intro
-          location
-          name
-          slug
-          title
+  query peopleQuery {
+    allMdx {
+      edges {
+        node {
+          frontmatter {
+            description
+            intro
+            location
+            name
+            slug
+            title
+          }
+          id
         }
-        id
       }
     }
   }
-}
-`
+`;
 
-export default IndexPage
+export default IndexPage;
