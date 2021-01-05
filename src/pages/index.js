@@ -1,12 +1,14 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
+import Header from "../components/header";
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
+      <Header />
       <div>
-        <h1>Directory of Google Workspace Developers!</h1>
+        <h1  style={{ borderBottom: 0 }}>Google Workspace Developers</h1>
         <table>
           <thead>
             <tr>
