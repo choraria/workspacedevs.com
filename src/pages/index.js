@@ -3,7 +3,7 @@ import React from "react";
 const IndexPage = () => {
   return (
     <div>
-      Hello World!
+      Directory of Google Workspace Developers!
     </div>
   )
 }
