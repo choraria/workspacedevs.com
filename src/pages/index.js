@@ -1,10 +1,11 @@
 import React from "react";
+import Layout from "../components/layout";
 
 const IndexPage = () => {
   return (
-    <div>
-      Directory of Google Workspace Developers!
-    </div>
+    <Layout>
+      <h1>Directory of Google Workspace Developers!</h1>
+    </Layout>
   )
 }
 
