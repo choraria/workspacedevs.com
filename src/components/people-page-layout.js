@@ -6,12 +6,14 @@ import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
+import Header from "../components/header";
 
 const shortcodes = { Link }; // Provide common components here
 
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
+      <Header />
       <div>
         <h1>{mdx.frontmatter.name}</h1>
         <MDXProvider components={shortcodes}>
