@@ -24,8 +24,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query')
   }
 
-  const people = result.data.allMdx.edges
-
+  const people = result.data.allMdx.edges;
+  
   people.forEach(({ node }, index) => {
     createPage({
       path: node.frontmatter.slug,
