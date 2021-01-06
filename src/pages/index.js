@@ -89,14 +89,12 @@ const IndexPage = () => {
             <p style={{ marginTop: `1.5rem` }}>Those are all!</p>
           )}
         </div>
-        <div class="social">
-        <ul style={{listStyleType:"none"}}>
-          <li><Image src="linkedin.png" alt="linkedin" /></li>
-          <li><Image src="github.png" alt="github" /></li>
-          <li><Image src="twitter.png" alt="twitter" /></li>
-          <li><Image src="website.png" alt="website" /></li>
-          <li><Image src="facebook.png" alt="facebook" /></li>
-          </ul>
+        <div>
+        <div class="socialLink"><Image src="linkedin.png" alt="linkedin" /></div>
+        <div class="socialLink"><Image src="github.png" alt="github" /></div>
+        <div class="socialLink"><Image src="twitter.png" alt="twitter" /></div>
+        <div class="socialLink"><Image src="website.png" alt="website" /></div>
+        <div class="socialLink"><Image src="facebook.png" alt="facebook" /></div>
         </div>
       </div>
     </Layout>
