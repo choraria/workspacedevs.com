@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 const AboutPage = ({ data }) => {
   return (
@@ -11,6 +12,7 @@ const AboutPage = ({ data }) => {
         <br />
         This space is to help bridge that gap!
       </div>
+      <Footer />
     </Layout>
   );
 };

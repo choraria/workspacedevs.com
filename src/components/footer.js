@@ -14,18 +14,25 @@ const ListLink = (props) => (
   </li>
 );
 
-export default function Header() {
+export default function Footer() {
   return (
     <div style={{ margin: `3rem auto` }}>
-      <header style={{ marginBottom: "1.5rem" }}>
-        <Link to="/" style={{ textShadow: "none", backgroundImage: "none" }}>
-          <h2 style={{ display: "inline", borderBottom: 0 }}>Directory</h2>
-        </Link>
+      <footer>
+        <p style={{ display: "inline" }}>
+          Created using{" "}
+          <Link
+            to="https://gatsbyjs.com/"
+            style={{ textShadow: "none", backgroundImage: "none" }}
+          >
+            Gatsby
+          </Link>
+        </p>
+
         <ul style={{ listStyle: "none", float: "right" }}>
-          <ListLink to="/about/">About</ListLink>
-          <ListLink to="https://github.com/schoraria911">Submit your profile</ListLink>
+          Maintained by{" "}
+          <ListLink to="https://twitter.com/schoraria911">SC</ListLink>
         </ul>
-      </header>
+      </footer>
     </div>
   );
 }

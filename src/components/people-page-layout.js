@@ -7,6 +7,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 const shortcodes = { Link }; // Provide common components here
 
@@ -20,6 +21,7 @@ export default function PageTemplate({ data: { mdx } }) {
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
       </div>
+      <Footer />
     </Layout>
   );
 }

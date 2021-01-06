@@ -89,3 +89,8 @@
 .box:nth-child(5) {
   width: 20%;
 }
+
+footer {
+  position: relative;
+  bottom: 0;
+}

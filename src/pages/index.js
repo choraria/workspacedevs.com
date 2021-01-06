@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useStaticQuery, Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import Image from "../components/image";
 
 const IndexPage = () => {
@@ -129,6 +130,9 @@ const IndexPage = () => {
             <p style={{ marginTop: `1.5rem` }}>Those are all!</p>
           )}
         </div>
+      </div>
+      <div>
+      <Footer />
       </div>
     </Layout>
   );
