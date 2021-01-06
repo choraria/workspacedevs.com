@@ -39,3 +39,12 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* https://www.w3schools.com/howto/howto_css_image_avatar.asp */
+
+.avatar {
+  vertical-align: middle;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
