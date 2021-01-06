@@ -90,11 +90,13 @@ const IndexPage = () => {
           )}
         </div>
         <div class="social">
-          <Image src="github.png" alt="github" />
-          <Image src="linkedin.png" alt="linkedin" />
-          <Image src="twitter.png" alt="twitter" />
-          <Image src="website.png" alt="website" />
-          <Image src="facebook.png" alt="facebook" />
+        <ul style={{listStyleType:"none"}}>
+          <li><Image src="linkedin.png" alt="linkedin" /></li>
+          <li><Image src="github.png" alt="github" /></li>
+          <li><Image src="twitter.png" alt="twitter" /></li>
+          <li><Image src="website.png" alt="website" /></li>
+          <li><Image src="facebook.png" alt="facebook" /></li>
+          </ul>
         </div>
       </div>
     </Layout>
