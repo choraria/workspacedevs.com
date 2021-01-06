@@ -10,12 +10,16 @@ const IndexPage = () => {
         edges {
           node {
             frontmatter {
-              description
-              intro
-              location
               name
               slug
-              title
+              location
+              intro
+              image
+              github
+              linkedin
+              twitter
+              website
+              facebook
             }
             id
           }

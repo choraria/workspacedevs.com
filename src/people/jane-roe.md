@@ -8,7 +8,7 @@ github: https://github.com/schoraria911/
 linkedin: https://www.linkedin.com/in/schoraria/
 twitter: https://twitter.com/schoraria911
 website: https://script.gs/
-facebook: 
+facebook: https://facebook.com
 ---
 
 Content for **Jane Roe** goes here!

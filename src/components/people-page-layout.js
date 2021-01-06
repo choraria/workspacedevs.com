@@ -31,6 +31,15 @@ export const query = graphql`
       body
       frontmatter {
         name
+        slug
+        location
+        intro
+        image
+        github
+        linkedin
+        twitter
+        website
+        facebook
       }
     }
   }
