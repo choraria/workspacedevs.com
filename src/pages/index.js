@@ -67,7 +67,8 @@ const IndexPage = () => {
                 class="avatar"
               />
               <div style={{ float: "right", textAlign: "right" }}>
-                <Link to={node.frontmatter.slug}>{node.frontmatter.name}</Link> <br />
+                <Link to={node.frontmatter.slug}>{node.frontmatter.name}</Link>{" "}
+                <br />
                 {node.frontmatter.location} <br />
                 {node.frontmatter.intro}
               </div>
@@ -79,7 +80,7 @@ const IndexPage = () => {
             Load More
           </button>
         ) : (
-          <p>Those are all!</p>
+          <p style={{ marginTop: `1.5rem` }}>Those are all!</p>
         )}
       </div>
     </Layout>
