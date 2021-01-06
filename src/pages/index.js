@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Header from "../components/header";
+
+export const query = graphql`
+  query peopleQuery {
+    allMdx {
+      edges {
+        node {
+          frontmatter {
+            description
+            intro
+            location
+            name
+            slug
+            title
+          }
+          id
+        }
+      }
+    }
+  }
+`;
 
 const IndexPage = ({ data }) => {
   return (
@@ -35,25 +55,5 @@ const IndexPage = ({ data }) => {
     </Layout>
   );
 };
-
-export const query = graphql`
-  query peopleQuery {
-    allMdx {
-      edges {
-        node {
-          frontmatter {
-            description
-            intro
-            location
-            name
-            slug
-            title
-          }
-          id
-        }
-      }
-    }
-  }
-`;
 
 export default IndexPage;
