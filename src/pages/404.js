@@ -7,10 +7,12 @@ const NotFoundPage = () => {
     <Layout>
       <Header />
       <div>
-        <h2 style={{ borderBottom: 0, textAlign: "center" }}>Oops! Looks like this page doesn't exist.</h2>
+        <h2 style={{ borderBottom: 0, textAlign: "center" }}>
+          Oops! Looks like this page doesn't exist.
+        </h2>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;

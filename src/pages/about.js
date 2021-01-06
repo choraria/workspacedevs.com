@@ -7,7 +7,8 @@ const AboutPage = ({ data }) => {
     <Layout>
       <Header />
       <div>
-        There are those who need help and then there are those who can help. <br />
+        There are those who need help and then there are those who can help.{" "}
+        <br />
         This space is to help bridge that gap!
       </div>
     </Layout>

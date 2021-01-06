@@ -52,7 +52,8 @@
 
 /* https://stackoverflow.com/a/13924997/10713297 */
 
-.location, .name {
+.location,
+.name {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -71,20 +72,20 @@
 /* https://codepen.io/feizel/pen/JELGyB */
 
 .box {
-  float:left;
+  float: left;
 }
-.box:nth-child(1){
-   width:20%;
+.box:nth-child(1) {
+  width: 20%;
 }
-.box:nth-child(2){
-  width:20%;
+.box:nth-child(2) {
+  width: 20%;
 }
-.box:nth-child(3){
-  width:20%;
+.box:nth-child(3) {
+  width: 20%;
 }
-.box:nth-child(4){
-  width:20%;
+.box:nth-child(4) {
+  width: 20%;
 }
-.box:nth-child(5){
-  width:20%;
+.box:nth-child(5) {
+  width: 20%;
 }

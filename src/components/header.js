@@ -11,16 +11,16 @@ const ListLink = (props) => (
 
 export default function Header() {
   return (
-      <div style={{ margin: `3rem auto`}}>
-        <header style={{ marginBottom: "1.5rem" }}>
-          <Link to="/" style={{ textShadow: "none", backgroundImage: "none" }}>
-            <h3 style={{ display: "inline" }}>Directory</h3>
-          </Link>
-          <ul style={{ listStyle: "none", float: "right" }}>
-            <ListLink to="/about/">About</ListLink>
-            <ListLink to="/contact/">Get listed</ListLink>
-          </ul>
-        </header>
-      </div>
+    <div style={{ margin: `3rem auto` }}>
+      <header style={{ marginBottom: "1.5rem" }}>
+        <Link to="/" style={{ textShadow: "none", backgroundImage: "none" }}>
+          <h3 style={{ display: "inline" }}>Directory</h3>
+        </Link>
+        <ul style={{ listStyle: "none", float: "right" }}>
+          <ListLink to="/about/">About</ListLink>
+          <ListLink to="/contact/">Get listed</ListLink>
+        </ul>
+      </header>
+    </div>
   );
 }
