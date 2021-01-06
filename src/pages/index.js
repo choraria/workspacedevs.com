@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useStaticQuery, Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Header from "../components/header";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
