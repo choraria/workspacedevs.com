@@ -11,7 +11,7 @@ const ListLink = (props) => (
 
 export default function Header() {
   return (
-      <div style={{ margin: `3rem auto`, maxWidth: 650}}>
+      <div style={{ margin: `3rem auto`}}>
         <header style={{ marginBottom: "1.5rem" }}>
           <Link to="/" style={{ textShadow: "none", backgroundImage: "none" }}>
             <h3 style={{ display: "inline" }}>Directory</h3>
