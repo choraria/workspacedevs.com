@@ -1,29 +1,54 @@
 import React, { useState, useEffect } from "react";
-import { Link, graphql } from "gatsby";
+import { useStaticQuery, Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Header from "../components/header";
 
-export const query = graphql`
-  query peopleQuery {
-    allMdx {
-      edges {
-        node {
-          frontmatter {
-            description
-            intro
-            location
-            name
-            slug
-            title
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allMdx {
+        edges {
+          node {
+            frontmatter {
+              description
+              intro
+              location
+              name
+              slug
+              title
+            }
+            id
           }
-          id
         }
       }
     }
-  }
-`;
+  `);
 
-const IndexPage = ({ data }) => {
+  // https://www.erichowey.dev/writing/load-more-button-and-infinite-scroll-in-gatsby/
+
+  const allPeople = data.allMdx.edges;
+  const [list, setList] = useState([...allPeople.slice(0, 10)]);
+  const [loadMore, setLoadMore] = useState(false);
+  const [hasMore, setHasMore] = useState(allPeople.length > 10);
+  const handleLoadMore = () => {
+    setLoadMore(true);
+  };
+  useEffect(() => {
+    if (loadMore && hasMore) {
+      const currentLength = list.length;
+      const isMore = currentLength < allPeople.length;
+      const nextResults = isMore
+        ? allPeople.slice(currentLength, currentLength + 10)
+        : [];
+      setList([...list, ...nextResults]);
+      setLoadMore(false);
+    }
+  }, [loadMore, hasMore]); //eslint-disable-line
+  useEffect(() => {
+    const isMore = list.length < allPeople.length;
+    setHasMore(isMore);
+  }, [list]); //eslint-disable-line
+
   return (
     <Layout>
       <Header />
@@ -38,7 +63,7 @@ const IndexPage = ({ data }) => {
             </tr>
           </thead>
           <tbody>
-            {data.allMdx.edges.map(({ node }) => (
+            {list.map(({ node }) => (
               <tr key={node.id}>
                 <td>
                   <Link to={node.frontmatter.slug}>
@@ -51,6 +76,11 @@ const IndexPage = ({ data }) => {
             ))}
           </tbody>
         </table>
+        {hasMore ? (
+          <button onClick={handleLoadMore}>Load More</button>
+        ) : (
+          <p>Those are all!</p>
+        )}
       </div>
     </Layout>
   );
