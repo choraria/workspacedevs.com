@@ -7,6 +7,8 @@
   transition: 0.3s;
 }
 
+/* https://www.w3schools.com/howto/howto_css_cards.asp */
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -17,6 +19,8 @@
   display: grid;
   grid-gap: 1rem;
 }
+
+/* https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe */
 
 @media (min-width: 600px) {
   .cards {

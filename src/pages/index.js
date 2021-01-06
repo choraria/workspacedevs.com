@@ -52,53 +52,27 @@ const IndexPage = () => {
   return (
     <Layout>
       <Header />
-
-      <div class="cards">
-  <div class="card">ONE</div>
-  <div class="card">TWO</div>
-  <div class="card">THREE</div>
-  <div class="card">FOUR</div>
-  <div class="card">FIVE</div>
-  <div class="card">SIX</div>
-  <div class="card">SEVEN</div>
-  <div class="card">EIGHT</div>
-  <div class="card">NINE</div>
-  <div class="card">TEN</div>
-  <div class="card">ELEVEN</div>
-  <div class="card">TWELVE</div>
-</div>
-
-
-      {/* <div>
+      <div>
         <h1 style={{ borderBottom: 0 }}>Google Workspace Developers</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Location</th>
-              <th>Intro</th>
-            </tr>
-          </thead>
-          <tbody>
-            {list.map(({ node }) => (
-              <tr key={node.id}>
-                <td>
-                  <Link to={node.frontmatter.slug}>
-                    {node.frontmatter.name}
-                  </Link>
-                </td>
-                <td>{node.frontmatter.location}</td>
-                <td>{node.frontmatter.intro}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <div class="cards">
+          {list.map(({ node }) => (
+            <div class="card" key={node.id}>
+              <div>
+                <Link to={node.frontmatter.slug}>{node.frontmatter.name}</Link>
+              </div>
+              <div>{node.frontmatter.location}</div>
+              <div>{node.frontmatter.intro}</div>
+            </div>
+          ))}
+        </div>
         {hasMore ? (
-          <button onClick={handleLoadMore}>Load More</button>
+          <button onClick={handleLoadMore} style={{ marginTop: `1.5rem` }}>
+            Load More
+          </button>
         ) : (
           <p>Those are all!</p>
         )}
-      </div> */}
+      </div>
     </Layout>
   );
 };
