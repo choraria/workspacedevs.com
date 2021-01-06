@@ -1,8 +1,8 @@
 ---
 name: Jane Roe
 slug: /jane-roe
-location: Bangalore, India
-intro: Amazing coder and genius of Amazing coder and genius of the world
+location: Bangalore, Karnataka, India
+intro: Amazing coder and genius of the world.
 image: https://www.w3schools.com/howto/img_avatar2.png
 github: https://github.com/schoraria911/
 linkedin: https://www.linkedin.com/in/schoraria/
