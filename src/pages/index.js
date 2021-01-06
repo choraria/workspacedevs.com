@@ -6,28 +6,28 @@ import Image from "../components/image";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-  {
-    allMdx {
-      edges {
-        node {
-          frontmatter {
-            facebook
-            github
-            image
-            intro
-            linkedin
-            location
-            name
-            slug
-            title
-            twitter
-            website
+    {
+      allMdx {
+        edges {
+          node {
+            frontmatter {
+              facebook
+              github
+              image
+              intro
+              linkedin
+              location
+              name
+              slug
+              title
+              twitter
+              website
+            }
+            id
           }
-          id
         }
       }
     }
-  }
   `);
 
   // https://www.erichowey.dev/writing/load-more-button-and-infinite-scroll-in-gatsby/
@@ -63,13 +63,17 @@ const IndexPage = () => {
         <div class="cards">
           {list.map(({ node }) => (
             <div class="card" key={node.id}>
-              <div style={{textAlign: "right"}}>
-              <img
-                src={node.frontmatter.image}
-                alt={node.frontmatter.name}
-                class="avatar"
-              />
-                <div class="name"><Link to={node.frontmatter.slug}>{node.frontmatter.name}</Link></div>
+              <div style={{ textAlign: "right" }}>
+                <img
+                  src={node.frontmatter.image}
+                  alt={node.frontmatter.name}
+                  class="avatar"
+                />
+                <div class="name">
+                  <Link to={node.frontmatter.slug}>
+                    {node.frontmatter.name}
+                  </Link>
+                </div>
                 <div class="location">{node.frontmatter.location}</div>
                 <div class="intro">{node.frontmatter.intro}</div>
               </div>
@@ -77,15 +81,21 @@ const IndexPage = () => {
           ))}
         </div>
         <div>
-        {hasMore ? (
-          <button onClick={handleLoadMore} style={{ marginTop: `1.5rem` }}>
-            Load More
-          </button>
-        ) : (
-          <p style={{ marginTop: `1.5rem` }}>Those are all!</p>
-        )}
+          {hasMore ? (
+            <button onClick={handleLoadMore} style={{ marginTop: `1.5rem` }}>
+              Load More
+            </button>
+          ) : (
+            <p style={{ marginTop: `1.5rem` }}>Those are all!</p>
+          )}
         </div>
-        <Image src="facebook.png" alt="facebook" />
+        <div class="social">
+          <Image src="github.png" alt="github" />
+          <Image src="linkedin.png" alt="linkedin" />
+          <Image src="twitter.png" alt="twitter" />
+          <Image src="website.png" alt="website" />
+          <Image src="facebook.png" alt="facebook" />
+        </div>
       </div>
     </Layout>
   );
