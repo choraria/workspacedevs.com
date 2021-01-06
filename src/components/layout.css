@@ -49,3 +49,13 @@
   border-radius: 50%;
   float: left;
 }
+
+/* https://stackoverflow.com/a/13924997/10713297 */
+
+.intro {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
