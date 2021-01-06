@@ -61,12 +61,12 @@ const IndexPage = () => {
         <div class="cards">
           {list.map(({ node }) => (
             <div class="card" key={node.id}>
+              <div class="devData" style={{textAlign: "right"}}>
               <img
                 src={node.frontmatter.image}
                 alt={node.frontmatter.name}
                 class="avatar"
               />
-              <div style={{ float: "right", textAlign: "right" }}>
                 <Link to={node.frontmatter.slug}>{node.frontmatter.name}</Link>{" "}
                 <br />
                 {node.frontmatter.location} <br />
