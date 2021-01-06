@@ -2,30 +2,32 @@ import React, { useState, useEffect } from "react";
 import { useStaticQuery, Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Header from "../components/header";
+import Image from "../components/image";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-    {
-      allMdx {
-        edges {
-          node {
-            frontmatter {
-              name
-              slug
-              location
-              intro
-              image
-              github
-              linkedin
-              twitter
-              website
-              facebook
-            }
-            id
+  {
+    allMdx {
+      edges {
+        node {
+          frontmatter {
+            facebook
+            github
+            image
+            intro
+            linkedin
+            location
+            name
+            slug
+            title
+            twitter
+            website
           }
+          id
         }
       }
     }
+  }
   `);
 
   // https://www.erichowey.dev/writing/load-more-button-and-infinite-scroll-in-gatsby/
@@ -83,6 +85,7 @@ const IndexPage = () => {
           <p style={{ marginTop: `1.5rem` }}>Those are all!</p>
         )}
         </div>
+        <Image src="facebook.png" alt="facebook" />
       </div>
     </Layout>
   );
