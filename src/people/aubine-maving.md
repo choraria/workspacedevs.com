@@ -3,6 +3,11 @@ name: Aubine Maving
 slug: /aubine-maving
 location: Toulouse, France
 intro: Brilliant developer
-description: Gatsby is just the best and I love spending time here.
+image: https://www.w3schools.com/howto/img_avatar2.png
+github: https://github.com/schoraria911/
+linkedin: https://www.linkedin.com/in/schoraria/
+twitter: https://twitter.com/schoraria911
+website: https://script.gs/
+facebook: 
 ---
 Content for **Aubine Maving** goes here!

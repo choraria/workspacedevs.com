@@ -3,6 +3,11 @@ name: Fee Klemps
 slug: /fee-klemps
 location: Nottingham, UK
 intro: Clumsy programmer
-description: I guess I'm not really sure what I'm doing.
+image: https://www.w3schools.com/howto/img_avatar2.png
+github: https://github.com/schoraria911/
+linkedin: https://www.linkedin.com/in/schoraria/
+twitter: https://twitter.com/schoraria911
+website: https://script.gs/
+facebook: 
 ---
 Content for **Fee Klemps** goes here!
