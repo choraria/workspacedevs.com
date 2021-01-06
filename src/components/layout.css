@@ -2,7 +2,7 @@
   border-radius: 10px;
   border-color: black;
   padding: 1rem;
-  height: 10rem;
+  height: 12rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
@@ -68,7 +68,23 @@
   -webkit-box-orient: vertical;
 }
 
-.socialLink {
-  width: 35px;
-  height: 35px;
+/* https://codepen.io/feizel/pen/JELGyB */
+
+.box {
+  float:left;
+}
+.box:nth-child(1){
+   width:20%;
+}
+.box:nth-child(2){
+  width:20%;
+}
+.box:nth-child(3){
+  width:20%;
+}
+.box:nth-child(4){
+  width:20%;
+}
+.box:nth-child(5){
+  width:20%;
 }

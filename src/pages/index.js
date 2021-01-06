@@ -77,6 +77,34 @@ const IndexPage = () => {
                 <div class="location">{node.frontmatter.location}</div>
                 <div class="intro">{node.frontmatter.intro}</div>
               </div>
+              <br />
+              <div>
+                <div class="box">
+                  <Link to={node.frontmatter.linkedin}>
+                    <Image src="linkedin.png" alt="linkedin" />
+                  </Link>
+                </div>
+                <div class="box">
+                  <Link to={node.frontmatter.github}>
+                    <Image src="github.png" alt="github" />
+                  </Link>
+                </div>
+                <div class="box">
+                  <Link to={node.frontmatter.twitter}>
+                    <Image src="twitter.png" alt="twitter" />
+                  </Link>
+                </div>
+                <div class="box">
+                  <Link to={node.frontmatter.website}>
+                    <Image src="website.png" alt="website" />
+                  </Link>
+                </div>
+                <div class="box">
+                  <Link to={node.frontmatter.facebook}>
+                    <Image src="facebook.png" alt="facebook" />
+                  </Link>
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -88,23 +116,6 @@ const IndexPage = () => {
           ) : (
             <p style={{ marginTop: `1.5rem` }}>Those are all!</p>
           )}
-        </div>
-        <div>
-          <div class="socialLink">
-            <Image src="linkedin.png" alt="linkedin" />
-          </div>
-          <div class="socialLink">
-            <Image src="github.png" alt="github" />
-          </div>
-          <div class="socialLink">
-            <Image src="twitter.png" alt="twitter" />
-          </div>
-          <div class="socialLink">
-            <Image src="website.png" alt="website" />
-          </div>
-          <div class="socialLink">
-            <Image src="facebook.png" alt="facebook" />
-          </div>
         </div>
       </div>
     </Layout>
