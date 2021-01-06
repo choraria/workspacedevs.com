@@ -19,7 +19,7 @@ export default function Footer() {
     <div style={{ margin: `3rem auto` }}>
       <footer>
         <p style={{ display: "inline" }}>
-          Created using{" "}
+          Built with{" "}
           <Link
             to="https://gatsbyjs.com/"
             style={{ textShadow: "none", backgroundImage: "none" }}
@@ -29,7 +29,7 @@ export default function Footer() {
         </p>
 
         <ul style={{ listStyle: "none", float: "right" }}>
-          Maintained by{" "}
+          by{" "}
           <ListLink to="https://twitter.com/schoraria911">SC</ListLink>
         </ul>
       </footer>

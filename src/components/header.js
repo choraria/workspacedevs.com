@@ -8,6 +8,7 @@ const ListLink = (props) => (
     style={{
       display: "inline-block",
       marginRight: "1rem",
+      textDecorationLine: "underline",
     }}
   >
     <Link to={props.to}>{props.children}</Link>
@@ -19,11 +20,11 @@ export default function Header() {
     <div style={{ margin: `3rem auto` }}>
       <header style={{ marginBottom: "1.5rem" }}>
         <Link to="/" style={{ textShadow: "none", backgroundImage: "none" }}>
-          <h2 style={{ display: "inline", borderBottom: 0 }}>Directory</h2>
+          <h3 style={{ display: "inline", }}>Directory</h3>
         </Link>
         <ul style={{ listStyle: "none", float: "right" }}>
           <ListLink to="/about/">About</ListLink>
-          <ListLink to="https://github.com/schoraria911">Submit your profile</ListLink>
+          <ListLink to="https://github.com/schoraria911">Submit</ListLink>
         </ul>
       </header>
     </div>
