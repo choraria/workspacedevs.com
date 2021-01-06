@@ -90,11 +90,21 @@ const IndexPage = () => {
           )}
         </div>
         <div>
-        <div class="socialLink"><Image src="linkedin.png" alt="linkedin" /></div>
-        <div class="socialLink"><Image src="github.png" alt="github" /></div>
-        <div class="socialLink"><Image src="twitter.png" alt="twitter" /></div>
-        <div class="socialLink"><Image src="website.png" alt="website" /></div>
-        <div class="socialLink"><Image src="facebook.png" alt="facebook" /></div>
+          <div class="socialLink">
+            <Image src="linkedin.png" alt="linkedin" />
+          </div>
+          <div class="socialLink">
+            <Image src="github.png" alt="github" />
+          </div>
+          <div class="socialLink">
+            <Image src="twitter.png" alt="twitter" />
+          </div>
+          <div class="socialLink">
+            <Image src="website.png" alt="website" />
+          </div>
+          <div class="socialLink">
+            <Image src="facebook.png" alt="facebook" />
+          </div>
         </div>
       </div>
     </Layout>
