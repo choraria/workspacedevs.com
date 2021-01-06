@@ -79,31 +79,41 @@ const IndexPage = () => {
               </div>
               <br />
               <div>
-                <div class="box">
-                  <Link to={node.frontmatter.linkedin}>
-                    <Image src="linkedin.png" alt="linkedin" />
-                  </Link>
-                </div>
-                <div class="box">
-                  <Link to={node.frontmatter.github}>
-                    <Image src="github.png" alt="github" />
-                  </Link>
-                </div>
-                <div class="box">
-                  <Link to={node.frontmatter.twitter}>
-                    <Image src="twitter.png" alt="twitter" />
-                  </Link>
-                </div>
-                <div class="box">
-                  <Link to={node.frontmatter.website}>
-                    <Image src="website.png" alt="website" />
-                  </Link>
-                </div>
-                <div class="box">
-                  <Link to={node.frontmatter.facebook}>
-                    <Image src="facebook.png" alt="facebook" />
-                  </Link>
-                </div>
+                {node.frontmatter.linkedin && (
+                  <div class="box">
+                    <Link to={node.frontmatter.linkedin}>
+                      <Image src="linkedin.png" alt="linkedin" />
+                    </Link>
+                  </div>
+                )}
+                {node.frontmatter.github && (
+                  <div class="box">
+                    <Link to={node.frontmatter.github}>
+                      <Image src="github.png" alt="github" />
+                    </Link>
+                  </div>
+                )}
+                {node.frontmatter.twitter && (
+                  <div class="box">
+                    <Link to={node.frontmatter.twitter}>
+                      <Image src="twitter.png" alt="twitter" />
+                    </Link>
+                  </div>
+                )}
+                {node.frontmatter.website && (
+                  <div class="box">
+                    <Link to={node.frontmatter.website}>
+                      <Image src="website.png" alt="website" />
+                    </Link>
+                  </div>
+                )}
+                {node.frontmatter.facebook && (
+                  <div class="box">
+                    <Link to={node.frontmatter.facebook}>
+                      <Image src="facebook.png" alt="facebook" />
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           ))}
