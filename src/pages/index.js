@@ -52,7 +52,24 @@ const IndexPage = () => {
   return (
     <Layout>
       <Header />
-      <div>
+
+      <div class="cards">
+  <div class="card">ONE</div>
+  <div class="card">TWO</div>
+  <div class="card">THREE</div>
+  <div class="card">FOUR</div>
+  <div class="card">FIVE</div>
+  <div class="card">SIX</div>
+  <div class="card">SEVEN</div>
+  <div class="card">EIGHT</div>
+  <div class="card">NINE</div>
+  <div class="card">TEN</div>
+  <div class="card">ELEVEN</div>
+  <div class="card">TWELVE</div>
+</div>
+
+
+      {/* <div>
         <h1 style={{ borderBottom: 0 }}>Google Workspace Developers</h1>
         <table>
           <thead>
@@ -81,7 +98,7 @@ const IndexPage = () => {
         ) : (
           <p>Those are all!</p>
         )}
-      </div>
+      </div> */}
     </Layout>
   );
 };
