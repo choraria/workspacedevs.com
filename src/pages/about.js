@@ -22,9 +22,10 @@ const AboutPage = () => {
       <SEO title={data.site.siteMetadata.description} />
       <Header />
       <div>
-        There are those who need help and then there are those who can help.{" "}
-        <br />
-        This space is to help bridge that gap!
+        There are those who <i>need</i> help and then there are those who <b>can</b> help.{" "}
+        <br /><br />
+        This space is to help bridge that gap within the Google Workspace (previously, G Suite)
+        Developers community and mostly geared towards users who work within the Apps Script ecosystem.
       </div>
       <Footer />
     </div>
