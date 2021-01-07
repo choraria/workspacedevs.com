@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Workspace Devs",
     description: "A directory of Google Workspace and Apps Script Developers.",
-    siteUrl: "https://workspacedevs.com/"
+    siteUrl: "https://workspacedevs.com/",
   },
   plugins: [
     {
@@ -24,7 +24,11 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: "Workspace Devs",
+        short_name: "WSD",
+        start_url: "/",
         icon: "src/images/icon.png",
+        display: "standalone",
       },
     },
     "gatsby-transformer-remark",
