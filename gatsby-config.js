@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Workspace Devs",
-    description: "A directory of Google Workspace and Apps Script Developers."
+    description: "A directory of Google Workspace and Apps Script Developers.",
+    siteUrl: "/"
   },
   plugins: [
     {
