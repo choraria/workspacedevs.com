@@ -1,7 +1,6 @@
 // https://www.gatsbyjs.com/docs/tutorial/part-three/#-add-navigation-links-between-pages
 
 import React from "react";
-import { Link } from "gatsby";
 
 const ListLink = (props) => (
   <li
@@ -10,7 +9,7 @@ const ListLink = (props) => (
       marginRight: "1rem",
     }}
   >
-    <Link to={props.to}>{props.children}</Link>
+    <a href={props.to}>{props.children}</a>
   </li>
 );
 
@@ -20,17 +19,15 @@ export default function Footer() {
       <footer>
         <p style={{ display: "inline" }}>
           Built with{" "}
-          <Link
-            to="https://gatsbyjs.com/"
+          <a
+            href="https://gatsbyjs.com/"
             style={{ textShadow: "none", backgroundImage: "none" }}
           >
             Gatsby
-          </Link>
+          </a>
         </p>
-
         <ul style={{ listStyle: "none", float: "right" }}>
-          by{" "}
-          <ListLink to="https://twitter.com/schoraria911">SC</ListLink>
+          by <ListLink to="https://twitter.com/schoraria911">SC</ListLink>
         </ul>
       </footer>
     </div>

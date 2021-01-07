@@ -23,6 +23,7 @@ const IndexPage = () => {
               title
               twitter
               website
+              availableForProjects
             }
             id
           }
@@ -31,9 +32,32 @@ const IndexPage = () => {
     }
   `);
 
+  const allPeople = data.allMdx.edges;
+
+  // https://www.aboutmonica.com/blog/create-gatsby-blog-search-tutorial
+
+  const emptyQuery = "";
+  const [state, setState] = useState({
+    filteredData: [],
+    query: emptyQuery,
+  });
+
+  const handleInputChange = (event) => {
+    const query = event.target.value;
+    console.log(query);
+    const people = allPeople || [];
+    const filteredData = people.filter(
+      ({ node }) => node.frontmatter.availableForProjects !== null
+    );
+    console.log(filteredData);
+    setState({
+      query,
+      filteredData,
+    });
+  };
+
   // https://www.erichowey.dev/writing/load-more-button-and-infinite-scroll-in-gatsby/
 
-  const allPeople = data.allMdx.edges;
   const [list, setList] = useState([...allPeople.slice(0, 10)]);
   const [loadMore, setLoadMore] = useState(false);
   const [hasMore, setHasMore] = useState(allPeople.length > 10);
@@ -61,6 +85,7 @@ const IndexPage = () => {
       <Header />
       <div>
         <h1 style={{ borderBottom: 0 }}>Google Workspace Developers</h1>
+        <input type="checkbox" onChange={handleInputChange} />
         <div class="cards">
           {list.map(({ node }) => (
             <div class="card" key={node.id}>
@@ -84,37 +109,37 @@ const IndexPage = () => {
               <div>
                 {node.frontmatter.linkedin && (
                   <div class="box">
-                    <Link to={node.frontmatter.linkedin}>
+                    <a href={node.frontmatter.linkedin}>
                       <Image src="linkedin.png" alt="linkedin" />
-                    </Link>
+                    </a>
                   </div>
                 )}
                 {node.frontmatter.github && (
                   <div class="box">
-                    <Link to={node.frontmatter.github}>
+                    <a href={node.frontmatter.github}>
                       <Image src="github.png" alt="github" />
-                    </Link>
+                    </a>
                   </div>
                 )}
                 {node.frontmatter.twitter && (
                   <div class="box">
-                    <Link to={node.frontmatter.twitter}>
+                    <a href={node.frontmatter.twitter}>
                       <Image src="twitter.png" alt="twitter" />
-                    </Link>
+                    </a>
                   </div>
                 )}
                 {node.frontmatter.website && (
                   <div class="box">
-                    <Link to={node.frontmatter.website}>
+                    <a href={node.frontmatter.website}>
                       <Image src="website.png" alt="website" />
-                    </Link>
+                    </a>
                   </div>
                 )}
                 {node.frontmatter.facebook && (
                   <div class="box">
-                    <Link to={node.frontmatter.facebook}>
+                    <a href={node.frontmatter.facebook}>
                       <Image src="facebook.png" alt="facebook" />
-                    </Link>
+                    </a>
                   </div>
                 )}
               </div>
@@ -132,7 +157,7 @@ const IndexPage = () => {
         </div>
       </div>
       <div>
-      <Footer />
+        <Footer />
       </div>
     </Layout>
   );

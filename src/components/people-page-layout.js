@@ -21,37 +21,37 @@ export default function PageTemplate({ data: { mdx } }) {
         <div style={{ width: `200px`, float: "right" }}>
           {mdx.frontmatter.linkedin && (
             <div class="box">
-              <Link to={mdx.frontmatter.linkedin}>
+              <a href={mdx.frontmatter.linkedin}>
                 <Image src="linkedin.png" alt="linkedin" />
-              </Link>
+              </a>
             </div>
           )}
           {mdx.frontmatter.github && (
             <div class="box">
-              <Link to={mdx.frontmatter.github}>
+              <a href={mdx.frontmatter.github}>
                 <Image src="github.png" alt="github" />
-              </Link>
+              </a>
             </div>
           )}
           {mdx.frontmatter.twitter && (
             <div class="box">
-              <Link to={mdx.frontmatter.twitter}>
+              <a href={mdx.frontmatter.twitter}>
                 <Image src="twitter.png" alt="twitter" />
-              </Link>
+              </a>
             </div>
           )}
           {mdx.frontmatter.website && (
             <div class="box">
-              <Link to={mdx.frontmatter.website}>
+              <a href={mdx.frontmatter.website}>
                 <Image src="website.png" alt="website" />
-              </Link>
+              </a>
             </div>
           )}
           {mdx.frontmatter.facebook && (
             <div class="box">
-              <Link to={mdx.frontmatter.facebook}>
+              <a href={mdx.frontmatter.facebook}>
                 <Image src="facebook.png" alt="facebook" />
-              </Link>
+              </a>
             </div>
           )}
         </div>
