@@ -23,7 +23,6 @@ const IndexPage = () => {
               title
               twitter
               website
-              availableForProjects
             }
             id
           }
@@ -33,28 +32,6 @@ const IndexPage = () => {
   `);
 
   const allPeople = data.allMdx.edges;
-
-  // https://www.aboutmonica.com/blog/create-gatsby-blog-search-tutorial
-
-  const emptyQuery = "";
-  const [state, setState] = useState({
-    filteredData: [],
-    query: emptyQuery,
-  });
-
-  const handleInputChange = (event) => {
-    const query = event.target.value;
-    console.log(query);
-    const people = allPeople || [];
-    const filteredData = people.filter(
-      ({ node }) => node.frontmatter.availableForProjects !== null
-    );
-    console.log(filteredData);
-    setState({
-      query,
-      filteredData,
-    });
-  };
 
   // https://www.erichowey.dev/writing/load-more-button-and-infinite-scroll-in-gatsby/
 
@@ -85,7 +62,6 @@ const IndexPage = () => {
       <Header />
       <div>
         <h1 style={{ borderBottom: 0 }}>Google Workspace Developers</h1>
-        <input type="checkbox" onChange={handleInputChange} />
         <div class="cards">
           {list.map(({ node }) => (
             <div class="card" key={node.id}>

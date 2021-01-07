@@ -9,6 +9,5 @@ linkedin:
 twitter: https://twitter.com/schoraria911
 website: https://script.gs/
 facebook: 
-availableForProjects: on
 ---
 Content for **Abey Sirkett** goes here!
