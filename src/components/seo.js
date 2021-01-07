@@ -70,6 +70,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  title: null,
 };
 
 SEO.propTypes = {
