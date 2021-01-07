@@ -5,17 +5,17 @@ import { graphql } from "gatsby";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Link } from "gatsby";
-import Layout from "../components/layout";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Image from "../components/image";
 import SEO from "../components/seo";
+import "./layout.css";
 
 const shortcodes = { Link }; // Provide common components here
 
 export default function PageTemplate({ data: { mdx } }) {
   return (
-    <Layout>
+    <div style={{ margin: `3rem auto`, maxWidth: 720, padding: `0 1rem` }}>
       <SEO title={mdx.frontmatter.name} description={mdx.frontmatter.intro} />
       <Header />
       <div>
@@ -64,7 +64,7 @@ export default function PageTemplate({ data: { mdx } }) {
         </MDXProvider>
       </div>
       <Footer />
-    </Layout>
+    </div>
   );
 }
 

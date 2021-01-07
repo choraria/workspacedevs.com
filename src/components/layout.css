@@ -14,7 +14,7 @@
 }
 
 .cards {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .cards {
     grid-template-columns: repeat(4, 1fr);
   }

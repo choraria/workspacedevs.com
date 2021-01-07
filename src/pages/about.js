@@ -1,9 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Layout from "../components/layout";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import SEO from "../components/seo";
+import "../components/layout.css";
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -18,7 +18,7 @@ const AboutPage = () => {
   `);
 
   return (
-    <Layout>
+    <div style={{ margin: `3rem auto`, maxWidth: 720, padding: `0 1rem` }}>
       <SEO title={data.site.siteMetadata.description} />
       <Header />
       <div>
@@ -27,7 +27,7 @@ const AboutPage = () => {
         This space is to help bridge that gap!
       </div>
       <Footer />
-    </Layout>
+    </div>
   );
 };
 

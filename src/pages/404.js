@@ -1,11 +1,11 @@
 import React from "react";
-import Layout from "../components/layout";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import "../components/layout.css";
 
 const NotFoundPage = () => {
   return (
-    <Layout>
+    <div style={{ margin: `3rem auto`, maxWidth: 720, padding: `0 1rem` }}>
       <Header />
       <div>
         <h2 style={{ borderBottom: 0, textAlign: "center" }}>
@@ -13,7 +13,7 @@ const NotFoundPage = () => {
         </h2>
       </div>
       <Footer />
-    </Layout>
+    </div>
   );
 };
 

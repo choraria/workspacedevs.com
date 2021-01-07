@@ -24,7 +24,12 @@ export default function Header() {
         </Link>
         <ul style={{ listStyle: "none", float: "right" }}>
           <ListLink to="/about/">About</ListLink>
-          <a href="https://github.com/schoraria911" style={{ textDecorationLine: "underline", }}>Submit</a>
+          <a
+            href="https://github.com/schoraria911"
+            style={{ textDecorationLine: "underline" }}
+          >
+            Submit
+          </a>
         </ul>
       </header>
     </div>

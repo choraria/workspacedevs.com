@@ -66,7 +66,10 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title={"Directory"} description={data.site.siteMetadata.description} />
+      <SEO
+        title={"Directory"}
+        description={data.site.siteMetadata.description}
+      />
       <Header />
       <div>
         <h1 style={{ borderBottom: 0 }}>Google Workspace Developers</h1>
