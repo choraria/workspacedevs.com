@@ -3,6 +3,8 @@ module.exports = {
     title: "Workspace Devs",
     description: "A directory of Google Workspace and Apps Script Developers.",
     siteUrl: "https://workspacedevs.com/",
+    author: "Sourabh Choraria",
+    twitterUsername: "@schoraria911",
   },
   plugins: [
     {
