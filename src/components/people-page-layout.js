@@ -9,12 +9,14 @@ import Layout from "../components/layout";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Image from "../components/image";
+import SEO from "../components/seo";
 
 const shortcodes = { Link }; // Provide common components here
 
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
+      <SEO title={mdx.frontmatter.name} description={mdx.frontmatter.intro} />
       <Header />
       <div>
         <h1>{mdx.frontmatter.name}</h1>
