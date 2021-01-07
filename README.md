@@ -33,6 +33,7 @@ This space is to help bridge that gap within the Google Workspace (previously, G
     Something nice about yourself goes here — feel free to brag ;)
     ```
     * `name` & `slug` are mandatory; link to `image` is mandatory too but you're free to use a default avatar image as well (I used [these ones](https://www.w3schools.com/howto/img_avatar2.png) during testing and development)
+        * `slug` needs to start with a `/` and you're free to design the slug based on whatever username you desire (could be the same as your Twitter handle, LinkedIn username etc.)
     * example file: [sourabh-choraria.md](src/people/sourabh-choraria.md)
 * Finally, create a pull request
 
