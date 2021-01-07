@@ -31,6 +31,8 @@ module.exports = {
         start_url: "/",
         icon: "src/images/icon.png",
         display: "standalone",
+        background_color: `#6b37bf`,
+        theme_color: `#6b37bf`,
       },
     },
     "gatsby-transformer-remark",
