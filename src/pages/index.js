@@ -128,7 +128,7 @@ const IndexPage = () => {
               Load More
             </button>
           ) : (
-            <p style={{ marginTop: `1.5rem` }}>Those are all!</p>
+            <p style={{ marginTop: `1.5rem` }}>More to come...</p>
           )}
         </div>
       </div>
