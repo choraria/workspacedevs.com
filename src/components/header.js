@@ -25,7 +25,7 @@ export default function Header() {
         <ul style={{ listStyle: "none", float: "right" }}>
           <ListLink to="/about/">About</ListLink>
           <a
-            href="https://github.com/schoraria911"
+            href="https://github.com/schoraria911/workspacedevs.com#submit-your-profile"
             style={{ textDecorationLine: "underline" }}
           >
             Submit
