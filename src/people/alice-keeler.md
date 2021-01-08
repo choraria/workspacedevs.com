@@ -2,7 +2,7 @@
 name: Alice Keeler
 slug: /alice-keeler
 location: Kansas, United States
-intro: Teacher, Author, Speaker, GDE.
+intro: Teacher, Author, Speaker, Innovator, Trainer, GDE.
 image: https://i1.wp.com/alicekeeler.com/wp-content/uploads/2017/03/Alice-Headshot.jpg?w=1080&ssl=1
 github: 
 linkedin: https://www.linkedin.com/in/alice-keeler-5173622/
