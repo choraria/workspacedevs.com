@@ -72,7 +72,7 @@
 /* https://codepen.io/feizel/pen/JELGyB */
 
 .box {
-  float: left;
+  float: right;
 }
 .box:nth-child(1) {
   width: 20%;
