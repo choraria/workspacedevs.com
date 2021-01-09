@@ -1,0 +1,13 @@
+---
+name: Scott Donald (Yagi)
+slug: /scott-donald
+location: Queensland, Australia
+intro: Workspace Educator, Consultant, GDE.
+image: https://yagisanatode.com/yagisanatodesquare/
+github: https://github.com/Yagisanatode/
+linkedin: https://www.linkedin.com/in/scott-donald-40713155/
+twitter: https://twitter.com/LifeOfSpy
+website: https://www.yagisanatode.com/
+facebook: https://www.facebook.com/yagisanatode
+---
+Suddenly thrust into two management/administrative positions with a projected doubling in company size in the near horizon, I had little choice but to automate my way out of the mountain of work. This quickly turned into a love affair with Google Workspace and Google Apps Script. In Octber of 2017, I created www.yagisanatode.com to keep track of my automation and Google Workspace solutions. This soon evolved into a tutorial and tooling website for Google Workspace users and devs. In October 2020, I left my full-time job to work on Yagisanatode and consult for small and medium businesses working in or planning to work in Google Workspace. I can honestly say that I love my job. 
