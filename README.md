@@ -8,6 +8,8 @@ This space is to help bridge that gap within the Google Workspace (previously, G
 
 ## Submit your profile
 
+> Here's how to — [fork a repo](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) & [create a pull request from a fork](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)
+
 * Fork this repository and create a new file inside [**src** > **people**](src/people) folder
 * Name the file with the following naming convention -
     * all lower case
