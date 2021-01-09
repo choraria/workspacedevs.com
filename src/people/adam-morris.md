@@ -1,6 +1,7 @@
 ---
 name: Adam Morris
-slug: /adam-morris
+slug: /clssrmtechtools
+image: https://www.w3schools.com/howto/img_avatar.png
 location: Kuala Lumpur, Malaysia
 intro: Open Source contributor in AppsScripts and Python
 github: https://github.com/classroomtechtools/
