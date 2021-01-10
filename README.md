@@ -36,6 +36,11 @@ This space is to help bridge that gap within the Google Workspace (previously, G
     ```
     * `name` & `slug` are mandatory; link to `image` is mandatory too but you're free to use a default avatar image as well (I used [these ones](https://www.w3schools.com/howto/img_avatar2.png) during testing and development)
         * `slug` needs to start with a `/` and you're free to design the slug based on whatever username you desire (could be the same as your Twitter handle, LinkedIn username etc.)
+        * `image` needs to be in a 1:1 aspect ratio
+            * ✅ 400 x 400
+            * ✅ 1280 x 1280
+            * ✅ 720 x 720
+            * ❌ 1000 x 780
     * example file: [sourabh-choraria.md](src/people/sourabh-choraria.md)
 * Finally, create a pull request
 
