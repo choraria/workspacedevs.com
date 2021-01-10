@@ -5,7 +5,7 @@ location: Denver, Colorado
 intro: Google Developer Expert passionate about Workflow Automation and Productivity  
 image: https://lh3.googleusercontent.com/a-/AAuE7mBorMDt_kkSZZFuPr_k-Qe2vEPxQywnqzNR3_867w=s96-c
 github: https://github.com/techstreams  
-linkedin: https://medium.com/@techstreams
+linkedin: https://www.linkedin.com/in/laurataylorts
 twitter: https://twitter.com/techstreams  
 website: https://www.tech-streams.com/  
 facebook:
