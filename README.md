@@ -16,7 +16,7 @@ This space is to help bridge that gap within the Google Workspace (previously, G
     * `first-last` (i.e. first name and last name, seperated by a hyphen); feel free to add middle name too, as applicable
     * `.md` extension
     * example file name: `sourabh-choraria.md`
-* Use the following teamplate and replace the default values with your own
+* Use the following template and replace the default values with your own
 
     ```
     ---
