@@ -18,8 +18,6 @@ export default function PageTemplate({ data: { mdx } }) {
   const pattern = new RegExp(/(\S+) (.*)/);
   const firstName = pattern.exec(name)[1];
   const lastName = pattern.exec(name)[2];
-  console.log(firstName);
-  console.log(lastName);
 
   return (
     <div style={{ margin: `3rem auto`, maxWidth: 720, padding: `0 1rem` }}>

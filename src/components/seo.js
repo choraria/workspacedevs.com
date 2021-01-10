@@ -61,15 +61,15 @@ function SEO({ title, description, lang, meta, image, ogType, firstName, lastNam
           content: ogType || `website`,
         },
         {
-          name: `og:url`,
+          property: `og:url`,
           content: `${site.siteMetadata.siteUrl}${location.pathname}`,
         },
         {
-          name: `profile:first_name`,
+          property: `profile:first_name`,
           content: firstName || null,
         },
         {
-          name: `profile:last_name`,
+          property: `profile:last_name`,
           content: lastName || null,
         },
         {
@@ -91,6 +91,10 @@ function SEO({ title, description, lang, meta, image, ogType, firstName, lastNam
         {
           name: `twitter:image`,
           content: image,
+        },
+        {
+          name: `twitter:image:alt`,
+          content: `${title} | ${site.siteMetadata.title}`,
         },
       ].concat(meta)}
     />

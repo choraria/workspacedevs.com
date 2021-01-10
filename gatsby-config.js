@@ -69,5 +69,13 @@ module.exports = {
       },
       __key: "people",
     },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://workspacedevs.com/",
+        sitemap: "https://workspacedevs.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
   ],
 };
