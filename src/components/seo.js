@@ -74,10 +74,10 @@ function SEO({ title, description, lang, meta, image, ogType, firstName, lastNam
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
-          name: `twitter:creator`,
+          name: `twitter:site`,
           content: site.siteMetadata.twitterUsername,
         },
         {

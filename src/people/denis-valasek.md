@@ -2,7 +2,7 @@
 name: Denis Valášek
 slug: /denis-valasek
 location: Ostrava, Czechia
-intro: Voice & Apps Script Developer, Google Developer Expert
+intro: Voice & Apps Script Developer, GDE
 image: https://firebasestorage.googleapis.com/v0/b/valasek-dev.appspot.com/o/denis.png?alt=media&token=227e7fa4-87f5-4ca4-9437-9e295fff7b02
 github: https://github.com/DenisVCode/
 linkedin: https://www.linkedin.com/in/denisvalasek/

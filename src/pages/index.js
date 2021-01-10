@@ -85,6 +85,8 @@ const IndexPage = () => {
                     src={node.frontmatter.image}
                     alt={node.frontmatter.name}
                     class="avatar"
+                    width="75px"
+                    height="75px"
                   />
                 </Link>
                 <div class="name">
