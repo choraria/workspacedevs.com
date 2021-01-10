@@ -16,7 +16,11 @@ const shortcodes = { Link }; // Provide common components here
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <div style={{ margin: `3rem auto`, maxWidth: 720, padding: `0 1rem` }}>
-      <SEO title={mdx.frontmatter.name} description={mdx.frontmatter.intro} />
+      <SEO
+        title={mdx.frontmatter.name}
+        description={mdx.frontmatter.intro}
+        image={mdx.frontmatter.image}
+      />
       <Header />
       <div>
         <h1>{mdx.frontmatter.name}</h1>

@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: "https://workspacedevs.com/",
     author: "Sourabh Choraria",
     twitterUsername: "@schoraria911",
+    image: "src/images/directory-google-workspace-developers.png",
   },
   plugins: [
     {

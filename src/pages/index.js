@@ -33,6 +33,7 @@ const IndexPage = () => {
         siteMetadata {
           title
           description
+          image
         }
       }
     }
@@ -69,6 +70,7 @@ const IndexPage = () => {
       <SEO
         title={"Directory"}
         description={data.site.siteMetadata.description}
+        image={data.site.siteMetadata.image}
       />
       <Header />
       <div>
