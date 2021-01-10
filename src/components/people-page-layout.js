@@ -14,12 +14,22 @@ import "./layout.css";
 const shortcodes = { Link }; // Provide common components here
 
 export default function PageTemplate({ data: { mdx } }) {
+  const name = mdx.frontmatter.name;
+  const pattern = new RegExp(/(\S+) (.*)/);
+  const firstName = pattern.exec(name)[1];
+  const lastName = pattern.exec(name)[2];
+  console.log(firstName);
+  console.log(lastName);
+
   return (
     <div style={{ margin: `3rem auto`, maxWidth: 720, padding: `0 1rem` }}>
       <SEO
         title={mdx.frontmatter.name}
         description={mdx.frontmatter.intro}
         image={mdx.frontmatter.image}
+        ogType={"profile"}
+        firstName={firstName}
+        lastName={lastName}
       />
       <Header />
       <div>

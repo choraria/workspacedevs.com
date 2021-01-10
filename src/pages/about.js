@@ -24,6 +24,7 @@ const AboutPage = () => {
         title={"Directory"}
         description={data.site.siteMetadata.description}
         image={defaultImage}
+        ogType={"website"}
       />
       <Header />
       <div>
