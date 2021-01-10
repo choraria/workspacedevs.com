@@ -5,6 +5,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Image from "../components/image";
 import SEO from "../components/seo";
+import defaultImage from "../images/directory-google-workspace-developers.png";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -33,7 +34,6 @@ const IndexPage = () => {
         siteMetadata {
           title
           description
-          image
         }
       }
     }
@@ -70,7 +70,7 @@ const IndexPage = () => {
       <SEO
         title={"Directory"}
         description={data.site.siteMetadata.description}
-        image={data.site.siteMetadata.image}
+        image={defaultImage}
       />
       <Header />
       <div>
