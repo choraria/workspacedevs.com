@@ -2,7 +2,7 @@
 name: Laura Taylor
 slug: /techstreams  
 location: Denver, Colorado  
-intro: Google Developer Expert passionate about Workflow Automation and Productivity  
+intro: GDE Google Workspace.  
 image: https://lh3.googleusercontent.com/a-/AAuE7mBorMDt_kkSZZFuPr_k-Qe2vEPxQywnqzNR3_867w=s96-c
 github: https://github.com/techstreams  
 linkedin: https://www.linkedin.com/in/laurataylorts
