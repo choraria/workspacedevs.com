@@ -34,6 +34,7 @@ const IndexPage = () => {
         siteMetadata {
           title
           description
+          siteUrl
         }
       }
     }
@@ -70,7 +71,7 @@ const IndexPage = () => {
       <SEO
         title={"Directory"}
         description={data.site.siteMetadata.description}
-        image={defaultImage}
+        image={`${data.site.siteMetadata.siteUrl}${defaultImage}`}
         ogType={"website"}
       />
       <Header />
