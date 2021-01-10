@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import { useLocation } from "@reach/router";
 
 function SEO({ title, description, lang, meta, image }) {
   const { site } = useStaticQuery(
@@ -13,6 +14,7 @@ function SEO({ title, description, lang, meta, image }) {
             description
             author
             twitterUsername
+            siteUrl
           }
         }
       }
@@ -20,6 +22,7 @@ function SEO({ title, description, lang, meta, image }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const location = useLocation();
 
   return (
     <Helmet
@@ -34,8 +37,20 @@ function SEO({ title, description, lang, meta, image }) {
           content: metaDescription,
         },
         {
+          name: `image`,
+          content: image,
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: `${title} | ${site.siteMetadata.title}`,
+        },
+        {
+          property: `og:image`,
+          content: image,
+        },
+        {
+          property: `og:image:alt`,
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           property: `og:description`,
@@ -46,24 +61,24 @@ function SEO({ title, description, lang, meta, image }) {
           content: `website`,
         },
         {
+          name: `og:url`,
+          content: `${site.siteMetadata.siteUrl}${location.pathname}`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.twitterUsername,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
-        },
-        {
-          name: `image`,
-          content: image,
         },
       ].concat(meta)}
     />
