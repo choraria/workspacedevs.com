@@ -9,4 +9,4 @@ twitter: https://twitter.com/bennettscience
 website: https://ohheybrian.com 
 ---
 
-I'm a teacher and hobby programmer. I use Apps Script to automate as much as possible to cut down on waste improve efficiency. In my spare time, I use Python to create apps and extensions around our LMS.
+I'm a teacher turned instructional coach. I use Apps Script to build tools for efficiency. Past experiments include [Endnote Generator](https://github.com/bennettscience/endnotes) and [DocuTube](https://github.com/bennettscience/docutube) (now archived). You can see other snippets and examples on [my blog](https://blog.ohheybrian.com/tag/google-apps-script/). Aside from Apps Script, I use Python to create extensions and apps to extend our LMS for teachers and students.
