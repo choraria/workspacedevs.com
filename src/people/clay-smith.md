@@ -3,7 +3,7 @@ name: Clay Smith
 slug: /clay-smith
 location: New York, United States
 intro: Teacher, Innovator, Trainer, Google Professional Collaboration Engineer.
-image: https://storage.googleapis.com/publicclaycodes/clayheadshot.JPG
+image: https://pbs.twimg.com/profile_images/993996842261151744/BoPDXQaQ_400x400.jpg
 github: 
 linkedin: 
 twitter: https://twitter.com/claycodes
