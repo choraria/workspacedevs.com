@@ -24,12 +24,20 @@ export default function Header() {
         </Link>
         <ul style={{ listStyle: "none", float: "right" }}>
           <ListLink to="/about/">About</ListLink>
-          <a
-            href="https://github.com/schoraria911/workspacedevs.com#submit-your-profile"
-            style={{ textDecorationLine: "underline" }}
+          <li
+            style={{
+              display: "inline-block",
+              marginRight: "1rem",
+              textDecorationLine: "underline",
+            }}
           >
-            Submit
-          </a>
+            <a
+              href="https://github.com/schoraria911/workspacedevs.com#submit-your-profile"
+              style={{ textDecorationLine: "underline" }}
+            >
+              Submit
+            </a>
+          </li>
         </ul>
       </header>
     </div>

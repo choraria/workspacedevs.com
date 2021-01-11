@@ -2,17 +2,6 @@
 
 import React from "react";
 
-const ListLink = (props) => (
-  <li
-    style={{
-      display: "inline-block",
-      marginRight: "1rem",
-    }}
-  >
-    <a href={props.to}>{props.children}</a>
-  </li>
-);
-
 export default function Footer() {
   return (
     <div style={{ margin: `3rem auto` }}>
@@ -27,7 +16,14 @@ export default function Footer() {
           </a>
         </p>
         <ul style={{ listStyle: "none", float: "right" }}>
-          by <ListLink to="https://twitter.com/schoraria911">SC</ListLink>
+          <li
+            style={{
+              display: "inline-block",
+              marginRight: "1rem",
+            }}
+          >
+            by <a href="https://twitter.com/schoraria911">SC</a>
+          </li>
         </ul>
       </footer>
     </div>
