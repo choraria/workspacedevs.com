@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useStaticQuery, Link, graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import Footer from "../components/footer";
@@ -7,39 +7,8 @@ import Image from "../components/image";
 import SEO from "../components/seo";
 import defaultImage from "../images/directory-google-workspace-developers.png";
 
-const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allMdx {
-        edges {
-          node {
-            frontmatter {
-              facebook
-              github
-              image
-              intro
-              linkedin
-              location
-              name
-              slug
-              title
-              twitter
-              website
-            }
-            id
-          }
-        }
-      }
-      site {
-        siteMetadata {
-          title
-          description
-          siteUrl
-        }
-      }
-    }
-  `);
-
+const IndexPage = (props) => {
+  const { data } = props;
   const allPeople = data.allMdx.edges;
 
   // https://www.erichowey.dev/writing/load-more-button-and-infinite-scroll-in-gatsby/
@@ -66,6 +35,38 @@ const IndexPage = () => {
     setHasMore(isMore);
   }, [list]); //eslint-disable-line
 
+  // https://www.aboutmonica.com/blog/create-gatsby-blog-search-tutorial
+
+  const emptyQuery = "";
+  const [state, setState] = useState({
+    filteredData: [],
+    query: emptyQuery,
+  });
+
+  const handleInputChange = (event) => {
+    const query = event.target.value;
+    const people = allPeople || [];
+    const filteredData = people.filter((person) => {
+      const { intro, location, name, title } = person.node.frontmatter;
+      const { excerpt } = person.node;
+      return (
+        intro.toLowerCase().includes(query.toLowerCase()) ||
+        location.toLowerCase().includes(query.toLowerCase()) ||
+        name.toLowerCase().includes(query.toLowerCase()) ||
+        title.toLowerCase().includes(query.toLowerCase()) ||
+        excerpt.toLowerCase().includes(query.toLowerCase())
+      );
+    });
+    setState({
+      query,
+      filteredData,
+    });
+  };
+
+  const { filteredData, query } = state;
+  const hasSearchResults = filteredData && query !== emptyQuery;
+  const people = hasSearchResults ? filteredData : list;
+
   return (
     <Layout>
       <SEO
@@ -77,8 +78,19 @@ const IndexPage = () => {
       <Header />
       <div>
         <h1 style={{ borderBottom: 0 }}>Google Workspace Developers</h1>
+
+        <div style={{ textAlign: "center", paddingBottom: `1.5rem` }}>
+          <input
+            type="text"
+            aria-label="Search"
+            placeholder="Search for..."
+            onChange={handleInputChange}
+            style={{ width: `100%`, maxWidth: `320px` }}
+          />
+        </div>
+
         <div class="cards">
-          {list.map(({ node }) => (
+          {people.map(({ node }) => (
             <div class="card" key={node.id}>
               <div style={{ textAlign: "right" }}>
                 <Link to={node.frontmatter.slug}>
@@ -157,3 +169,36 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const peopleQuery = graphql`
+  {
+    allMdx {
+      edges {
+        node {
+          frontmatter {
+            facebook
+            github
+            image
+            intro
+            linkedin
+            location
+            name
+            slug
+            title
+            twitter
+            website
+          }
+          id
+          excerpt(pruneLength: 100000)
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        description
+        siteUrl
+      }
+    }
+  }
+`;
