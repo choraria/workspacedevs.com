@@ -2,7 +2,7 @@
 name: Anchal Nigam
 slug: /IMTheNachoMan
 location: Connecticut, USA
-intro: programming, cybersecurity, process improvement
+intro: dev, cybersec, process improvement
 image: https://i.imgur.com/8ILjsZ4.jpg
 github: https://github.com/imthenachoman/
 linkedin: https://www.linkedin.com/in/imthenachoman/
