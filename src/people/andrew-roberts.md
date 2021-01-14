@@ -3,7 +3,7 @@ name: Andrew Roberts
 slug: /andrewroberts
 location: West Wales, UK
 intro: Freelance Developer. Google Workspace (Apps Script) Developer Expert. Outdoor enthusiast.
-image: https://drive.google.com/file/d/18t4_DmxxZa10LlMd9ScMTLVFguxwgUJX/view?usp=sharing
+image: https://drive.google.com/uc?export=view&id=18t4_DmxxZa10LlMd9ScMTLVFguxwgUJX
 website: https://www.andrewroberts.net
 github: https://github.com/andrewroberts/
 linkedin: https://www.linkedin.com/in/andrewroberts6/
