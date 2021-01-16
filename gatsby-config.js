@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Workspace Devs",
     description: "A directory of Google Workspace and Apps Script Developers.",
-    siteUrl: "https://workspacedevs.com/",
+    siteUrl: "https://workspacedevs.com",
     author: "Sourabh Choraria",
     twitterUsername: "@schoraria911",
     image: "src/images/directory-google-workspace-developers.png",
@@ -72,9 +72,17 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://workspacedevs.com/",
+        host: "https://workspacedevs.com",
         sitemap: "https://workspacedevs.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://workspacedevs.com`,
+        noQueryString: true,
+        noHash: true,
       },
     },
   ],
