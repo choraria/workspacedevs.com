@@ -3,7 +3,7 @@ name: David Gentile
 slug: /david-gentile
 location: Queenstown, New Zealand
 intro: Automation Consultant
-image: http://davidgentile.net/assets/images/profile-circle.png
+image: https://davidgentile.net/assets/images/profile-circle.png
 github: https://github.com/diva-D/
 linkedin: https://www.linkedin.com/in/davidfgentile/
 twitter: https://twitter.com/dfgentile
