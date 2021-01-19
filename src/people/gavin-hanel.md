@@ -1,6 +1,6 @@
 ---
 name: Gavin Hanel
-slug: /gavin-hanel
+slug: /gavinhanel
 location: London, United Kingdom
 intro: IT Consultant in Education, Google for Edu Trainer.
 image: https://pbs.twimg.com/profile_images/1351463022708088832/hOHjDy2k_400x400.jpg
