@@ -3,7 +3,7 @@ name: Martin Luengas
 slug: /martin-luengas
 location: Buenos Aires, Argentina
 intro: Finance specialist, thus spreadsheets lover.
-image: https://www.baica.com/wp-content/martin-luengas.jpg
+image: https://pbs.twimg.com/profile_images/1122879616669106176/Z7G402Cx_400x400.png
 github: https://github.com/mluengas
 linkedin: https://www.linkedin.com/in/martinluengas/
 twitter: https://twitter.com/martoluengas
