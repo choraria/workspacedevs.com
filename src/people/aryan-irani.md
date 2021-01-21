@@ -3,7 +3,7 @@ name: Aryan Irani
 slug: /aryanirani
 location: Mumbai, India
 intro: Student, Technical Blogger, Apps Script contributor
-image: https://pbs.twimg.com/profile_images/1348311396409241601/fQdZEK3z_400x400.jpg
+image: https://pbs.twimg.com/profile_images/1351537547705425923/YEnR2f3__400x400.jpg
 github: https://github.com/aryanirani123
 linkedin: https://www.linkedin.com/in/aryan-irani-41b2971a9/
 twitter: https://twitter.com/aryanirani123
