@@ -8,6 +8,8 @@ There are those who *need* help and then there are those who **can** help.
 
 This space is to help bridge that gap within the Google Workspace (previously, G Suite) Developers community and mostly geared towards users who work within the Apps Script ecosystem.
 
+More on the **why** can be found [here](https://twitter.com/schoraria911/status/1348705346605338624).
+
 ## Submit your profile
 
 > Here's how to — [fork a repo](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) & [create a pull request from a fork](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)
