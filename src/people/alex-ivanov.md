@@ -2,7 +2,7 @@
 name: Alexander Ivanov
 slug: /alex-ivanov
 location: Moscow, Russia
-intro: Adept of Spreadsheets & Cloud computing. Google Product Expert.
+intro: Adept of Sheets & Cloud computing. GP Expert
 image: https://github.com/contributorpw.png
 github: https://github.com/contributorpw
 linkedin: https://www.linkedin.com/in/oshliaer/
