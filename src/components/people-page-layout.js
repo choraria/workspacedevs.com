@@ -75,18 +75,30 @@ export default function PageTemplate({ data: { mdx } }) {
         <br />
 
         <div>
-          <img
-            src={mdx.frontmatter.image}
-            alt={mdx.frontmatter.name}
+          <div
             style={{
               maxWidth: "150px",
               float: "left",
-              margin: "5px 25px 5px 0",
+              margin: "5px 55px 5px 0",
             }}
-          ></img>
-          <MDXProvider components={shortcodes}>
-            <MDXRenderer>{mdx.body}</MDXRenderer>
-          </MDXProvider>
+          >
+            <img src={mdx.frontmatter.image} alt={mdx.frontmatter.name}></img>
+            {mdx.frontmatter.twitter && (
+              <a
+                href={mdx.frontmatter.twitter}
+                class="twitter-follow-button"
+                data-size="large"
+                data-show-count="false"
+              >
+                Follow
+              </a>
+            )}
+          </div>
+          <div>
+            <MDXProvider components={shortcodes}>
+              <MDXRenderer>{mdx.body}</MDXRenderer>
+            </MDXProvider>
+          </div>
         </div>
       </div>
       <div style={{ margin: `10rem auto` }}>
