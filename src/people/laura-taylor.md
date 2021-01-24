@@ -3,7 +3,7 @@ name: Laura Taylor
 slug: /techstreams  
 location: Denver, Colorado  
 intro: GDE Google Workspace.  
-image: https://lh3.googleusercontent.com/a-/AAuE7mBorMDt_kkSZZFuPr_k-Qe2vEPxQywnqzNR3_867w=s96-c
+image: https://media-exp1.licdn.com/dms/image/C4D03AQEzVTe8YXoz3Q/profile-displayphoto-shrink_800_800/0/1516835028964?e=1617235200&v=beta&t=FYXyF3yHJZclT4uFDUduJE944tZGf92fjGH-dU5ceAM
 github: https://github.com/techstreams  
 linkedin: https://www.linkedin.com/in/laurataylorts
 twitter: https://twitter.com/techstreams  
