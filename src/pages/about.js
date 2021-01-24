@@ -35,6 +35,14 @@ const AboutPage = () => {
         This space is to help bridge that gap within the Google Workspace
         (previously, G Suite) Developers community and mostly geared towards
         users who work within the Apps Script ecosystem.
+        <br />
+        <br />
+        More on the <b>why</b> can be found{" "}
+        <a href="https://twitter.com/schoraria911/status/1348705346605338624">
+          here
+        </a>
+        .<br />
+        <br />
       </div>
       <Footer />
     </div>

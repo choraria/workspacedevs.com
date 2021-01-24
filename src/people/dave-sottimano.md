@@ -9,3 +9,4 @@ twitter: https://twitter.com/dsottimano
 facebook: 
 ---
 
+Professional SEO and Marketer turned dev. Contributing to open source projects in JS, Python and Apps script.
