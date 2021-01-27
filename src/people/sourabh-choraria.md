@@ -8,7 +8,7 @@ github: https://github.com/schoraria911/
 linkedin: https://www.linkedin.com/in/schoraria/
 twitter: https://twitter.com/schoraria911
 website: https://script.gs/
-facebook: https://www.facebook.com/srbhchrr
+facebook: 
 ---
 
 I was introduced to the world of Google Apps Script back in 2017 and ever since, it has been an amazing journey towards getting to understand the possibilities it entails when it comes to simple automations, workflow optimizations and improving overall efficiency.
