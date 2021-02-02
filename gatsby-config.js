@@ -36,7 +36,9 @@ module.exports = {
         display: "standalone",
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
-        purpose: "any",
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     "gatsby-transformer-remark",
