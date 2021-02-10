@@ -3,7 +3,7 @@ name: Ravgeet Dhillon
 slug: /ravgeet-dhillon
 location: India
 intro: JAMstack, Flutter, Python, Automation
-image: https://i.ibb.co/5ByTY0Z/ravgeet-dhillon-original.jpg
+image: https://pbs.twimg.com/profile_images/1075419485295718400/QSn2f39s_400x400.jpg
 github: https://github.com/ravgeetdhillon/
 linkedin: https://www.linkedin.com/in/ravgeetdhillon/
 twitter: https://twitter.com/ravgeetdhillon
