@@ -11,4 +11,4 @@ website: https://alicekeeler.com/
 facebook: https://www.facebook.com/alicekeelerllc
 ---
 
-Teacher and mom of 5, Alice Keeler is the Google-crowned “Queen of Spreadsheets”, an international speaker on teaching and EdTech integration, co-author of 6 books, Google Certified Innovator, Google Apps Developer, founder of #coffeeEDU, and has degrees in Mathematics and Educational Media Design and Technology. Alice shares her expertise through online workshops at [alicekeeler.com/goslow](alicekeeler.com/goslow), blogs at [alicekeeler.com](alicekeeler.com) and tweets [@alicekeeler](https://twitter.com/alicekeeler).
+Teacher and mom of 5, Alice Keeler is the Google-crowned “Queen of Spreadsheets”, an international speaker on teaching and EdTech integration, co-author of 6 books, Google Certified Innovator, Google Apps Developer, founder of #coffeeEDU, and has degrees in Mathematics and Educational Media Design and Technology. Alice shares her expertise through online workshops at [alicekeeler.com/goslow](https://alicekeeler.com/goslow), blogs at [alicekeeler.com](https://alicekeeler.com) and tweets [@alicekeeler](https://twitter.com/alicekeeler).

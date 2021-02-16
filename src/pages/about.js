@@ -35,6 +35,41 @@ const AboutPage = () => {
         This space is to help bridge that gap within the Google Workspace
         (previously, G Suite) Developers community and mostly geared towards
         users who work within the Apps Script ecosystem.
+        <br />
+        <br />
+        More on the <b>why</b> can be found{" "}
+        <a href="https://twitter.com/schoraria911/status/1348705346605338624">
+          here
+        </a>
+        .<br />
+        <br />
+        <div>
+          <blockquote
+            class="twitter-tweet"
+            data-conversation="none"
+            data-theme="dark"
+          >
+            <p lang="en" dir="ltr">
+              Why?
+              <br />
+              <br />
+              The idea behind this was out of a personal need — I receive a
+              dozen or so emails, LinkedIn &amp; Twitter pings every month from
+              people asking for some help with their{" "}
+              <a href="https://twitter.com/hashtag/AppsScript?src=hash&amp;ref_src=twsrc%5Etfw">
+                #AppsScript
+              </a>{" "}
+              code or building a full solution in general.
+              <br />
+              <br />I try and help as many (&amp; as much) as I can but...{" "}
+              <a href="https://t.co/ZDDHew4xHd">pic.twitter.com/ZDDHew4xHd</a>
+            </p>
+            &mdash; Sourabh Choraria (@schoraria911){" "}
+            <a href="https://twitter.com/schoraria911/status/1348705346605338624?ref_src=twsrc%5Etfw">
+              January 11, 2021
+            </a>
+          </blockquote>
+        </div>
       </div>
       <Footer />
     </div>

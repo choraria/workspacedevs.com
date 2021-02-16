@@ -32,6 +32,7 @@ export default function PageTemplate({ data: { mdx } }) {
       <Header />
       <div>
         <h1>{mdx.frontmatter.name}</h1>
+
         <div style={{ width: `200px`, float: "right" }}>
           {mdx.frontmatter.linkedin && (
             <div class="box">
@@ -69,13 +70,40 @@ export default function PageTemplate({ data: { mdx } }) {
             </div>
           )}
         </div>
+
         <br />
         <br />
-        <MDXProvider components={shortcodes}>
-          <MDXRenderer>{mdx.body}</MDXRenderer>
-        </MDXProvider>
+
+        <div>
+          <div
+            style={{
+              maxWidth: "150px",
+              float: "left",
+              margin: "5px 55px 5px 0",
+            }}
+          >
+            <img src={mdx.frontmatter.image} alt={mdx.frontmatter.name}></img>
+            {mdx.frontmatter.twitter && (
+              <a
+                href={mdx.frontmatter.twitter}
+                class="twitter-follow-button"
+                data-size="large"
+                data-show-count="false"
+              >
+                Follow
+              </a>
+            )}
+          </div>
+          <div>
+            <MDXProvider components={shortcodes}>
+              <MDXRenderer>{mdx.body}</MDXRenderer>
+            </MDXProvider>
+          </div>
+        </div>
       </div>
-      <Footer />
+      <div style={{ margin: `10rem auto` }}>
+        <Footer />
+      </div>
     </div>
   );
 }

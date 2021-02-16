@@ -25,6 +25,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-offline",
+    "gatsby-plugin-twitter",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -35,6 +36,9 @@ module.exports = {
         display: "standalone",
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     "gatsby-transformer-remark",

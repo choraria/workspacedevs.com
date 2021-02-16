@@ -3,8 +3,8 @@ name: Marko Kolombo
 slug: /marko-kolombo
 location: Riga, Latvia
 intro: Professional Google Apps Script enthusiast.
-image: https://www.w3schools.com/howto/img_avatar2.png
 website: https://marko.kolombo.dev/
+image: https://www.w3schools.com/howto/img_avatar.png
 github: https://github.com/marcomow/
 linkedin: https://www.linkedin.com/in/marco-colombo-a3062542/
 twitter: https://twitter.com/MarcoMow

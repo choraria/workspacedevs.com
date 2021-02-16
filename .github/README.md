@@ -1,3 +1,5 @@
+![GitHub](https://img.shields.io/github/license/schoraria911/workspacedevs.com) &nbsp; [![Netlify Status](https://api.netlify.com/api/v1/badges/0669cfe0-72b0-4653-bfac-7f784f79e001/deploy-status)](https://app.netlify.com/sites/workspacedevs/deploys) &nbsp; ![Twitter Follow](https://img.shields.io/twitter/follow/schoraria911?label=Follow&style=social)
+
 # Directory of Google Workspace Developers
 
 ## Purpose
@@ -5,6 +7,8 @@
 There are those who *need* help and then there are those who **can** help.
 
 This space is to help bridge that gap within the Google Workspace (previously, G Suite) Developers community and mostly geared towards users who work within the Apps Script ecosystem.
+
+More on the **why** can be found [here](https://twitter.com/schoraria911/status/1348705346605338624).
 
 ## Submit your profile
 
