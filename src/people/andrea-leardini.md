@@ -5,7 +5,7 @@ location: Italy
 intro: Web Developer, Google Product Expert
 image: https://storage.googleapis.com/support-forums-api/avatar/profile-4292-2826138448840749949.png
 github: https://github.com/andrealeardini/
-twitter: https://twitter.com/username
+twitter: https://twitter.com/andrealeard
 website: https://www.wikilear.it/
 facebook: https://www.facebook.com/leardini.andrea
 ---
