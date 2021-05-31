@@ -3,7 +3,7 @@ name: Scott Donald (Yagi)
 slug: /scott-donald
 location: Queensland, Australia
 intro: Workspace Educator, Consultant, GDE.
-image: https://yagisanatode.com/yagisanatodesquare/
+image: https://i0.wp.com/yagisanatode.com/wp-content/uploads/2021/01/yagisanatodeSquare.jpg?ssl=1
 github: https://github.com/Yagisanatode/
 linkedin: https://www.linkedin.com/in/scott-donald-40713155/
 twitter: https://twitter.com/LifeOfSpy
