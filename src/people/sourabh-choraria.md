@@ -3,7 +3,7 @@ name: Sourabh Choraria
 slug: /sourabh-choraria
 location: Bangalore, India
 intro: Spreadsheet nerd, Apps Script junkie, GDE.
-image: https://sfo2.digitaloceanspaces.com/advocu/gde/profile-photos/2020/05/03/35eac828a425e4b418df.jpg
+image: https://s3-us-east-2.amazonaws.com/cdn.script.gs/imgs/2021/06/sourabh-choraria-profile-jun-2021.jpg
 github: https://github.com/schoraria911/
 linkedin: https://www.linkedin.com/in/schoraria/
 twitter: https://twitter.com/schoraria911
