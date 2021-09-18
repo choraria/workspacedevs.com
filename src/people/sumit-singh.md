@@ -2,7 +2,7 @@
 name: Sumit Singh
 slug: /singhsumi01
 location: New Delhi, India
-intro: Founder of @synbussolutions | Trainer | GoogleDevExpert in GoogleWorkspace & GoogleAppScript
+intro: Founder of @synbussolutions, Trainer, GoogleDevExpert in GoogleWorkspace & GoogleAppScript
 image: https://synbussolutions.com/img/sumit-singh-19062021.png
 github: https://github.com/singhsumi01/
 linkedin: https://www.linkedin.com/in/singhsumi01/
