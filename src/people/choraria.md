@@ -1,12 +1,12 @@
 ---
 name: Sourabh Choraria
-slug: /sourabh-choraria
+slug: /choraria
 location: Bangalore, India
 intro: Spreadsheet nerd, Apps Script junkie, GDE.
 image: https://s3-us-east-2.amazonaws.com/cdn.script.gs/imgs/2021/06/sourabh-choraria-profile-jun-2021.jpg
-github: https://github.com/choraria/
+github: https://github.com/choraria
 linkedin: https://www.linkedin.com/in/choraria/
-twitter: https://twitter.com/schoraria911
+twitter: https://twitter.com/choraria
 website: https://script.gs/
 facebook: 
 ---
