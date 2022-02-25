@@ -32,7 +32,7 @@ export default function Header() {
             }}
           >
             <a
-              href="https://github.com/schoraria911/workspacedevs.com#submit-your-profile"
+              href="https://github.com/choraria/workspacedevs.com#submit-your-profile"
               style={{ textDecorationLine: "underline" }}
             >
               Submit

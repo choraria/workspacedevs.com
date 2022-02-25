@@ -22,7 +22,7 @@ export default function Footer() {
               marginRight: "1rem",
             }}
           >
-            by <a href="https://twitter.com/schoraria911">SC</a>
+            by <a href="https://twitter.com/choraria">SC</a>
           </li>
         </ul>
       </footer>
